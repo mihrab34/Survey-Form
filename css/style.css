@@ -15,8 +15,13 @@ body {
 .main {
   background-color: white;
   font-family: 'Arial';
+  font-size: lem;
   max-width: 10in;
   text-align: center;
   padding: 10px;
   margin: 0 auto;
 }
+#description{
+  padding: 10px;
+}
+
