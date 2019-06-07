@@ -11,15 +11,43 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">Let us know how we can improve Microverse</p>
 
+  <div>
     <form id="survey-form">
       <label for="name" id="name-label">*Name:</label><br>
-      <input type="text" id="name" placeholder="Enter your name" required><br>
+      <div class="input"><input type="text" id="name" placeholder="Enter your name" required><br></div>
       <label for="email" id="email-label">*Email:</label><br>
-      <input type="email" id="email" placeholder="Enter your email" required><br>
+      <div class="input"><input type="email" id="email" placeholder="Enter your email" required><br></div>
       <label for="number" id="number-label">*Age:</label><br><input type="number" id="number" placeholder="Age" min="1" max="100" required><br>
+  </div>
 
 
+    <div class="dropdown">
+      <p id="position">Which option best describes your current role?</p><br>
+      <select id="dropdown" name="position" class 'dropdown'>
+        <option disabled value>Select an option</option>
+        <option value="student">Student</option>
+        <option value ="job">Full-time worker</option>
+        <option value ="learner">Full-time learner</option>
+        <option value ="anon">Prefer not to say</option>
+        <option value = "other">Other</option>
+      </select>
+    </div>
 
+  <div>
+    <label for="favourite">What do you like most about Microverse?</label>
+    <ul >
+        <li class="radio"><label>Partner pairing<input name="radio-buttons" type="radio" value="1" class="favourite"</label></li>
+        <li class="radio"><label>Remote learning<input name="radio-buttons" type="radio" value="2" class="favourite"</label></li>
+        <li class="radio"><label>Fast pace<input name="radio-buttons" type="radio" value="3" class="favourite"</label></li>
+        <li class="radio"><label>Job Opportunities<input name="radio-buttons" type="radio" value="3" class="favourite"</label></li>
+        <li class="radio"><label>Other<input name="radio-buttons" type="radio" value="4" class="favourite"</label></li>
+  </div>
+
+  <div>
+    <label>What do you think could be improved</label>
+    <p class="checkbox">Videos</p>
+  </div>
+    </ul>
     </form>
   </body>
 </html>
