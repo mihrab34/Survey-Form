@@ -44,9 +44,18 @@
   </div>
 
   <div>
-    <label>What do you think could be improved</label>
-    <p class="checkbox">Videos</p>
+    <label>What do you think could be improved<br>(Check all that apply):</label>
+    <p> <label for="Videos" ><input type="checkbox" name="videos" value="1" >Videos</label></p>
+    <p><label for="Different courses"><input type="checkbox" name="different courses" value="2">Different courses</label></p>
+    <p><label for="Forum"><input type="checkbox" name="forum" value="3" >Forum</label></p>
   </div>
+  <div>
+    <p><label for="comments">Any Comments or Suggestions?</label></p>
+    <textarea class="input field" id="comments" placeholder="Enter your comment here..." maxlength="400"></textarea>
+    </div>
+    <div>
+      <button id="submit">Submit</button>
+    </div>
     </ul>
     </form>
   </body>
